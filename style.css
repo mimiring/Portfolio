@@ -1,0 +1,151 @@
+body, div, h1, table, ul, li, h2, p, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 13px;
+}
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+body {
+    background-color: rgb(0,0,70);
+}
+.wrap {
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(195,195,195,0.8);
+    margin: 20px;
+    padding: 20px;
+}
+.title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+.writer_wrap {
+    margin-bottom: 40px;
+}
+.writer_info {
+    text-align: left;
+    padding: 0;
+}
+.writer_info .writer_title {
+    padding: 2px;
+    width: 60px;
+    float: left;
+    list-style: none;
+}
+.writer_info .writer_contents {
+    padding: 2px;
+    list-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project_wrap {
+    margin-bottom: 40px;
+
+}
+.project_wrap .project_title {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.project_wrap .project_imgwrap {
+    min-width: 150px;
+    margin: 5px 0;
+    position: relative;
+}
+
+.project_wrap .project_imgwrap:hover .project_link_wrap {
+    visibility: visible;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.3);
+}
+.project_wrap .project_link_wrap {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+.project_wrap .project_link_wrap .project_link_text {
+    text-align: center;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(0,0,70);
+    font-weight: bold;
+}
+
+.project_wrap .project_img {
+    width: 100%;
+}
+.project_description_wrap {
+    margin-left: 20px;
+}
+.project_description_wrap .project_description {
+    list-style: square;
+}
+
+.project_github {
+    font-size: 12px;
+}
+
+br {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    li, span, a {
+        font-size: 16px;
+    }
+    br {
+        display: inline-block;
+    }
+    .wrap {
+        background-color: white;
+        box-shadow: 5px 5px 5px 5px rgba(195,195,195,0.8);
+        margin: 30px;
+        padding: 30px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .writer_wrap {
+        margin-bottom: 50px;
+    }
+    .project_wrap .project_title {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .project_wrap .project_imgwrap {
+        margin: 10px 0;
+    }
+
+    .project_description_wrap {
+        margin-left: 30px;
+    }
+    .project_description_wrap .project_description {
+        list-style: square;
+    }
+    .project_github {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .warp {
+        padding: 50px;
+    }
+    .project_wrap .project_imgwrap {
+        max-width: 800px;
+    }
+}
